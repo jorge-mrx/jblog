@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Jblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+
+    <body class="body">
+    <div>
+  
+<h1 class="banner"> Jorge's Blog</h1>
+  
+  <h3>
+  <div class="menu", align: "center">
+  <%= link_to 'Home', controller: 'welcome' %>
+  <%= link_to 'Articles', controller: 'articles' %>
+  <%= link_to 'Something', controller: 'something' %>
+  <%= link_to 'Help', controller: 'help' %>
+  <%= link_to 'About', controller: 'about' %>
+  </div>
+ 
+  </h3>
+ 
+  </div>
+
+    <%= yield %>
+  </body>
+  
+</html>
