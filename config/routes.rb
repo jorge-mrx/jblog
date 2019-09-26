@@ -19,10 +19,10 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :articles do
-    resources :comments
-    resources :help
-    resources :about
-    resources :something
+  resources :comments
+  resources :help
+  resources :about
+  resources :something
 
   end
  

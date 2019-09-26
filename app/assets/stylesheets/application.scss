@@ -42,9 +42,18 @@
 
   .articles {
     margin: 0 auto;
-    align-content: center;
+    
+    // align-content: center;
     text-align: center;
     color: white;
+    width: 60%;
+  }
+
+  .form {
+    margin: 0 auto;
+   
+    text-align: center;
+    color: black;
     width: 60%;
   }
 
