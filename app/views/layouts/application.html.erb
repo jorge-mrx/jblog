@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
+
+  
   <title>Jblog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,15 +15,22 @@
     <body class="body">
     <div>
   
-<h1 class="banner"> Jorge's Blog</h1>
+  <table class="centab">
+  <tr><h1 class="banner"> Jorge's Blog</h1></tr>
+
+
+
+
+
   
   <h3>
   <div class="menu", align: "center">
   <%= link_to 'Home', controller: 'welcome' %>
   <%= link_to 'Articles', controller: 'articles' %>
-  <%= link_to 'Something', controller: 'something' %>
+  <%= link_to 'SignUp!', controller: 'users' %>
   <%= link_to 'Help', controller: 'help' %>
   <%= link_to 'About', controller: 'about' %>
+  
   </div>
  
   </h3>
